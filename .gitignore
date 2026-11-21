@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+tools/companion/.build-venv/
+tools/companion/build/
+tools/companion/dist/
+logs/
+.sr20-staging

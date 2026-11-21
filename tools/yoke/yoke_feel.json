@@ -1,0 +1,14 @@
+{
+  "loose": {
+    "preset": 1,
+    "near": 0.8,
+    "main": 0.8
+  },
+  "stiff": {
+    "preset": 3,
+    "near": 1.2,
+    "main": 1.5
+  },
+  "trim_gain": 1.0,
+  "shaker": 0.0
+}

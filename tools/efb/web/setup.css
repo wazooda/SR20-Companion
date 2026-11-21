@@ -1,0 +1,37 @@
+:root { --bg: #f4f6f8; --panel: #fff; --fg: #17202a; --muted: #5a6876; --line: #d9e0e6; --ok: #19734a; --bad: #a33a1c; --accent: #00788f; }
+@media (prefers-color-scheme: dark) { :root { --bg: #0d1218; --panel: #151d26; --fg: #e4ebf1; --muted: #93a3b2; --line: #26333f; --ok: #4fd08a; --bad: #ff8a65; --accent: #2fd3f0; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 "Segoe UI", system-ui, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { font-size: 30px; margin: 0 0 4px; }
+h2 { font-size: 19px; margin: 0 0 10px; color: var(--accent); }
+section { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 16px 18px; margin: 16px 0; }
+.lede { color: var(--muted); margin: 0 0 8px; }
+.muted { color: var(--muted); font-size: 14px; }
+ul.status { list-style: none; padding: 0; margin: 0 0 8px; }
+ul.status li { padding: 3px 0 3px 22px; position: relative; }
+ul.status li::before { position: absolute; left: 0; font-weight: 700; }
+li.ok::before { content: "\2713"; color: var(--ok); }
+li.bad::before { content: "!"; color: var(--bad); }
+.bad { color: var(--bad); }
+.qr { background: #fff; display: inline-block; padding: 8px; border-radius: 4px; margin: 6px 0; }
+.qr svg { display: block; width: 240px; height: 240px; }
+.addr { font-size: 20px; margin: 6px 0 2px; }
+code { font-size: 13px; word-break: break-all; }
+button { font: inherit; font-size: 15px; padding: 6px 12px; border-radius: 4px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+button:disabled { opacity: .6; cursor: default; }
+ul.others { list-style: none; padding: 0; }
+ul.others .qr svg { width: 160px; height: 160px; }
+details summary { cursor: pointer; color: var(--muted); }
+a { color: var(--accent); }
+.send code.big { font-size: 22px; font-weight: 600; user-select: all; background: var(--bg); padding: 6px 10px; border-radius: 4px; display: inline-block; }
+.pair { display: flex; flex-wrap: wrap; gap: 24px; margin: 8px 0 12px; }
+.pair .step { flex: 1 1 260px; min-width: 0; }
+.pair h3 { font-size: 17px; margin: 0 0 4px; }
+li.info::before { content: "\2022"; color: var(--muted); }
+.pair h3 .n { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: var(--panel); font-size: 16px; margin-right: 8px; }
+.pair h3 { font-size: 19px; display: flex; align-items: center; }
+.qr.small svg { width: 160px; height: 160px; }
+ol.steps li { margin: 4px 0; }
+dl.help dt { font-weight: 600; margin-top: 10px; }
+dl.help dd { margin: 2px 0 0 0; color: var(--fg); }
+section.quiet { background: transparent; }

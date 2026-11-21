@@ -1,0 +1,17 @@
+{
+ "schema": 1,
+ "currency": "10/31/26",
+ "hash": "6fd6dca16a5dba07",
+ "source": "https://aeronav.faa.gov/Obst_Data/DAILY_DOF_DAT.ZIP",
+ "built": "2026-11-01",
+ "min_agl_ft": 200,
+ "kept": 196090,
+ "rejected": {
+  "short": 1,
+  "not a record": 3
+ },
+ "filtered": {
+  "below 200 ft AGL": 457208,
+  "catenary": 7241
+ }
+}
