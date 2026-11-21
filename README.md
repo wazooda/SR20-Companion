@@ -11,6 +11,9 @@ flightsim.to). It runs beside the sim and provides:
 
 `tools/companion/sr20_companion.py` starts one child process per helper and shows a tray icon.
 
+User manual of the mod, including the Companion's tray menu and troubleshooting:
+https://wazooda.github.io/SR20-Realism-Mod/
+
 ## Build
 
 Windows, Python 3.13, and the MSFS 2024 SDK (for its `SimConnect.dll`):
